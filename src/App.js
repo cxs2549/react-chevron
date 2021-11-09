@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import Header from './components/Header/Header'
+import Home from './views/Home/Home'
 
 const links1 = [
 	{
@@ -58,6 +59,9 @@ const App = () => {
 	return (
 		<Fragment>
 			<Header links1={links1} links2={links2} />
+			<main>
+				<Home />
+			</main>
 		</Fragment>
 	)
 }

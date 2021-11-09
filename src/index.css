@@ -8,3 +8,7 @@ body {
   color: hsl(240, 2%, 28%);
 }
 
+:root {
+  --color-primary: hsl(225.2, 73.7%, 29.4%);
+}
+

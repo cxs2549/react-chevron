@@ -9,6 +9,7 @@ z-index: -1;
 background: #F1F1F1;
 opacity: ${props => props.open ? '1' : '0'};
 transition: opacity 0.5s ease-in-out;
+border-bottom: 2px solid hsl(0, 100%, 70%);
 li {
     color: #2C9EEB;
     cursor: pointer;
