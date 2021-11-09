@@ -8,6 +8,11 @@ background-size: contain;
 position: absolute;
 left: 50%;
 transform : translateX(-50%);
+@media (min-width: 768px) {
+	position: relative;
+	left: 0;
+	transform : translateX(0);
+}
 `
 const Logo = () => {
 	return <StyledLogo />

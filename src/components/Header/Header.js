@@ -1,19 +1,26 @@
 import styled from 'styled-components'
 import tw from 'twin.macro'
 import Burger from './Burger/Burger'
+import Links from './Links/Links'
 import Logo from './Logo/Logo'
 import Search from './Search/Search'
-const StyledHeader = styled.header.attrs({ className: 'h-20 bg-white w-full shadow' })`
+import Topbar from './Topbar/Topbar'
+const StyledHeader = styled.header.attrs({ className: ' bg-white w-full shadow' })`
 & { 
 // h1 { ${tw`text-4xl`} }
 }
 `
-const Header = () => {
+const Header = ({ links1, links2 }) => {
 	return (
 		<StyledHeader>
-			<div id="container" className="max-w-6xl mx-auto px-4 flex items-center justify-between h-full">
-				<Burger />
+			<Topbar />
+			<div
+				id="container"
+				className="py-3 max-w-5xl mx-auto px-4 md:px-8 xl:px-0 flex items-center justify-between h-full"
+			>
+				<Burger links1={links1} links2={links2} />
 				<Logo />
+				<Links links1={links1} />
 				<Search />
 			</div>
 		</StyledHeader>
