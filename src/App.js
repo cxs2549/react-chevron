@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import { useRoutes } from 'react-router'
 import Header from './components/Header/Header'
 import Home from './views/Home/Home'
 
@@ -55,12 +56,18 @@ const links2 = [
 	}
 ]
 
+const routes = [
+	{path: '/', element: <Home />},
+]
+
+
 const App = () => {
+	const element = useRoutes(routes)
 	return (
 		<Fragment>
 			<Header links1={links1} links2={links2} />
 			<main>
-				<Home />
+				{element}
 			</main>
 		</Fragment>
 	)

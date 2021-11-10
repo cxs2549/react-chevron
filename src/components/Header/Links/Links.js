@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import tw from 'twin.macro'
 const StyledLinks = styled.div.attrs({ className: 'hidden md:flex gap-8'  })`
-& { 
-// h1 { ${tw`text-4xl`} }
+a {
+    font-size: 17px;
 }
 `
 const Links = ({links1}) => {

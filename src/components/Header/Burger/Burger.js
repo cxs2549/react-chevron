@@ -9,7 +9,7 @@ const Burger = ({ links1, links2 }) => {
 	useOnClickOutside(menuRef, () => setOpen(false))
 	return (
 		<div ref={menuRef} className="md:hidden">
-			<Hamburger toggled={isOpen} toggle={setOpen} />
+			<Hamburger size={26} toggled={isOpen} toggle={setOpen} />
 			<Menu open={isOpen} links1={links1} links2={links2} />
 		</div>
 	)

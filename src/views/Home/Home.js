@@ -1,37 +1,33 @@
 import styled from 'styled-components'
-import hero from '../../assets/hero.png'
+import Card from './Card/Card'
+import Hero from './Hero/Hero'
+import card1 from '../../assets/cards/card-1.png'
+import card2 from '../../assets/cards/card-2.png'
 
-const StyledHome = styled.div.attrs({ className: '' })`
-	button {
-		background-color: var(--color-primary);;
+const cards = [
+	{
+		title: 'advancing a lower carbon future for us all',
+		subtitle: `see how we're getting there`,
+		image: card1
+	},
+	{
+		title: 'developing renewable fuel feedstocks',
+		subtitle: `learn about our investment`,
+		image: card2
 	}
-	h1 {
-		color: var(--color-primary);
-	}
+]
+
+const StyledHome = styled.div`
+	p {
+        font-weight: 400;
+    }
 `
 const Home = () => {
 	return (
 		<StyledHome>
-			<img src={hero} alt="" className="xl:hidden" />
-			<div className="max-w-6xl mx-auto px-4 md:px-8 xl:px-0 py-8 xl:pt-0">
-				<img src={hero} alt="" className="hidden xl:block mb-8" />
-
-				<div className="flex flex-col items-center gap-8">
-					<h1 className="font-bold  text-center max-w-sm md:max-w-xl mx-auto text-3xl">
-						chevron sets net zero aspiration and new GHG intensity target
-					</h1>
-					<p className=" text-center font-medium text-lg">
-						Learn more in our updated climate change resilience
-						report
-					</p>
-					<button className=" text-white font-semibold px-8 py-3 rounded mx-auto ">
-						read the press release
-					</button>
-					<a href="/" className="text-blue-700 font-bold flex items-center gap-2">
-						<p>download the updated report</p>
-						<i className="fa fa-link" aria-hidden="true" />
-					</a>
-				</div>
+			<Hero />
+			<div className="md:grid md:grid-cols-2 max-w-4xl xl:gap-8 mx-auto">
+				{cards.map((card) => <Card key={card.title} {...card} />)}
 			</div>
 		</StyledHome>
 	)

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 const StyledTopbar = styled.div.attrs({ className: '' })`
 background-color: hsl(225.2, 73.7%, 29.4%);
+background-color: #2C9EEB;
 `
 
 

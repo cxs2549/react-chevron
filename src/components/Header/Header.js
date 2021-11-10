@@ -7,7 +7,7 @@ import Search from './Search/Search'
 import Topbar from './Topbar/Topbar'
 import Headroom from 'react-headroom'
 
-const StyledHeader = styled.header.attrs({ className: ' bg-white w-full shadow' })`
+const StyledHeader = styled.header.attrs({ className: ' bg-white w-full' })`
 & { 
 // h1 { ${tw`text-4xl`} }
 }

@@ -3,11 +3,12 @@ const StyledMenu = styled.div.attrs({ className: 'p-8'  })`
 position: fixed;
 top: 70px;
 left: 0;
-/* height: 100%; */
+height: calc(100vh - 70px);
 width: 100%;
 z-index: -1;
 background: #F1F1F1;
 opacity: ${props => props.open ? '1' : '0'};
+pointer-events: ${props => props.open ? 'auto' : 'none'};
 transition: opacity 0.5s ease-in-out;
 border-bottom: 2px solid hsl(0, 100%, 70%);
 li {
@@ -15,6 +16,9 @@ li {
     cursor: pointer;
     &:hover {
         color: #0E50A2;
+    }
+    a {
+        font-size: 17px;
     }
 }
 `

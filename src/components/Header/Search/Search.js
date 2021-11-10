@@ -42,7 +42,7 @@ const Search = () => {
 	return (
 		<StyledSearch className="">
 			<div onClick={handleShowSearch} className="cursor-pointer">
-				<AiOutlineSearch size={32} />
+				<AiOutlineSearch size={29} />
 			</div>
 			<div
 				id="searchbar"
@@ -82,7 +82,7 @@ const Search = () => {
 						)}
 					</div>
 					<div onClick={handleCloseSearch}>
-						<AiOutlineClose size={32} className="cursor-pointer" />
+						<AiOutlineClose size={29} className="cursor-pointer" />
 					</div>
 				</div>
 			</div>
