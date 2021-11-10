@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { useRoutes } from 'react-router'
+import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Home from './views/Home/Home'
 
@@ -69,6 +70,7 @@ const App = () => {
 			<main>
 				{element}
 			</main>
+			<Footer />
 		</Fragment>
 	)
 }
