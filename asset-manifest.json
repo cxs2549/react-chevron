@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-chevron/static/css/main.58040b39.chunk.css",
-    "main.js": "/react-chevron/static/js/main.216dcab7.chunk.js",
-    "main.js.map": "/react-chevron/static/js/main.216dcab7.chunk.js.map",
+    "main.css": "/react-chevron/static/css/main.cec131b9.chunk.css",
+    "main.js": "/react-chevron/static/js/main.40e4dca4.chunk.js",
+    "main.js.map": "/react-chevron/static/js/main.40e4dca4.chunk.js.map",
     "runtime-main.js": "/react-chevron/static/js/runtime-main.da047ff8.js",
     "runtime-main.js.map": "/react-chevron/static/js/runtime-main.da047ff8.js.map",
-    "static/js/2.9291260c.chunk.js": "/react-chevron/static/js/2.9291260c.chunk.js",
-    "static/js/2.9291260c.chunk.js.map": "/react-chevron/static/js/2.9291260c.chunk.js.map",
+    "static/js/2.c872e1f9.chunk.js": "/react-chevron/static/js/2.c872e1f9.chunk.js",
+    "static/js/2.c872e1f9.chunk.js.map": "/react-chevron/static/js/2.c872e1f9.chunk.js.map",
     "index.html": "/react-chevron/index.html",
-    "static/css/main.58040b39.chunk.css.map": "/react-chevron/static/css/main.58040b39.chunk.css.map",
-    "static/js/2.9291260c.chunk.js.LICENSE.txt": "/react-chevron/static/js/2.9291260c.chunk.js.LICENSE.txt",
+    "static/css/main.cec131b9.chunk.css.map": "/react-chevron/static/css/main.cec131b9.chunk.css.map",
+    "static/js/2.c872e1f9.chunk.js.LICENSE.txt": "/react-chevron/static/js/2.c872e1f9.chunk.js.LICENSE.txt",
     "static/media/card-1.a62fb027.png": "/react-chevron/static/media/card-1.a62fb027.png",
     "static/media/hero.a0304c7c.png": "/react-chevron/static/media/hero.a0304c7c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.da047ff8.js",
-    "static/js/2.9291260c.chunk.js",
-    "static/css/main.58040b39.chunk.css",
-    "static/js/main.216dcab7.chunk.js"
+    "static/js/2.c872e1f9.chunk.js",
+    "static/css/main.cec131b9.chunk.css",
+    "static/js/main.40e4dca4.chunk.js"
   ]
 }
