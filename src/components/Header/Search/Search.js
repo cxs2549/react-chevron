@@ -7,7 +7,7 @@ import Logo from '../Logo/Logo'
 const StyledSearch = styled.div.attrs({ className: '' })`
 
 #searchbar {
-	top: 0;
+	top: 6px;
 	height: 72px;
 	@media (min-width: 768px) {
 		top: 36px;
@@ -51,7 +51,7 @@ const Search = () => {
 					? 'opacity-100 pointer-events-all'
 					: 'opacity-0 pointer-events-none'} transition-all duration-500 absolute bg-white w-full left-0 right-0 top-0  z-10`}
 			>
-				<div className="max-w-6xl mx-auto flex items-center gap-2 h-full px-4 md:px-8 xl:px-0 justify-end">
+				<div className="max-w-6xl mx-auto flex items-center gap-3 h-full px-4 md:px-8 xl:px-0 justify-end">
 					<div className="hidden md:block">
 						<Logo />
 					</div>

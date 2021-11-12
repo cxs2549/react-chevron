@@ -12,7 +12,7 @@ const StyledHeader = styled.header.attrs({ className: ' bg-white w-full' })`
 // h1 { ${tw`text-4xl`} }
 }
 `
-const Header = ({ links1, links2 }) => {
+const Header = () => {
 	return (
 		<Headroom>
 			<StyledHeader>
@@ -21,9 +21,9 @@ const Header = ({ links1, links2 }) => {
 					id="container"
 					className="py-3 max-w-6xl mx-auto px-4 md:px-8 xl:px-0 flex items-center justify-between h-full"
 				>
-					<Burger links1={links1} links2={links2} />
+					<Burger />
 					<Logo />
-					<Links links1={links1} />
+					<Links />
 					<Search />
 				</div>
 			</StyledHeader>

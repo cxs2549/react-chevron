@@ -26,7 +26,7 @@ const Home = () => {
 	return (
 		<StyledHome>
 			<Hero />
-			<div className="md:grid md:grid-cols-2 max-w-4xl xl:gap-8 mx-auto">
+			<div className="md:grid md:grid-cols-2 max-w-5xl gap-4 xl:gap-8 mx-auto">
 				{cards.map((card) => <Card key={card.title} {...card} />)}
 			</div>
 		</StyledHome>

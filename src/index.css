@@ -10,7 +10,7 @@ body {
 
 }
 
-
+.stop-flow {overflow: hidden}
 
 :root {
   --color-primary: hsl(225.2, 73.7%, 29.4%);

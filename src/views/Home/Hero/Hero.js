@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import hero from '../../../assets/hero.png'
 
-const StyledHero = styled.div.attrs({ className: '' })`
+const StyledHero = styled.div.attrs({ className: 'pb-4' })`
 
     
     
@@ -29,7 +30,7 @@ const Hero = () => {
 	return (
 		<StyledHero>
 			<img src={hero} alt="" className="xl:hidden" />
-			<div id="text" className="max-w-6xl mx-auto px-4 md:px-8 xl:px-0 py-10 xl:pt-0">
+			<div id="text" className="max-w-6xl mx-auto px-4 md:px-8 xl:px-0 py-6 xl:pt-0">
 				<img src={hero} alt="" className="hidden xl:block mb-8 rounded" />
 
 				<div className="flex flex-col items-center gap-2">
@@ -37,12 +38,18 @@ const Hero = () => {
 						chevron sets net zero aspiration and new GHG intensity target
 					</h1>
 					<p className=" text-center font-medium text-lg">
-						Learn more in our updated climate change <br /> resilience report
+						Learn more in our updated climate change <br className="md:hidden" />{' '}
+						resilience report
 					</p>
 					<button className="mt-4 text-white font-semibold px-8 py-3 rounded mx-auto cursor-pointer ">
-						read the press release
+						<Link to="/stories/chevron-sets-net-zero-aspiration-and-new-ghg-intensity-target">
+							read the press release
+						</Link>
 					</button>
-					<a href="/" className="flex items-center gap-2 mt-2">
+					<a
+						href="https://www.chevron.com/-/media/chevron/sustainability/documents/2021-climate-change-resilience-report.pdf"
+						className="flex items-center gap-2 mt-2"
+					>
 						<span className="font-semibold border-b border-blue-700">
 							download the updated report
 						</span>
